@@ -1,6 +1,5 @@
 #!/bin/bash
-#This script backs up a directory of your choice
-
+#This script backs up a directory specified by the first argument (positional parameter)
 if [ $# -ne 1 ]
 then 
 echo "Usage is $0 <directory to back up>"
