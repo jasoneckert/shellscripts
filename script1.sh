@@ -10,7 +10,7 @@ vgscan >>$FILENAME.report
 pvscan >>$FILENAME.report
 
 echo -e "\n\n Partition Configuration: \n\n" >>$FILENAME.report
-lsblk -f >>$FILENAME.report
+lsblk >>$FILENAME.report
 
 echo -e "\n\n Mounted Filesystem Usage: \n\n" >>$FILENAME.report
-df -h | grep -v tmp >>$FILENAME.report
+df -hT | grep -v tmp >>$FILENAME.report
