@@ -9,5 +9,5 @@ if tar -zcvf /remoteserver/backup-oracle-`date +%F`.tar.gz /oracledb/*
 
   else
   echo "Oracle backup failed on `date`" >>/var/log/oraclebackuplog
-  mail -s BACKUP FAILED jason.eckert@trios.com </var/log/oraclebackuplog
+  mail -s "BACKUP FAILED" jason.eckert@trios.com </var/log/oraclebackuplog
 fi
